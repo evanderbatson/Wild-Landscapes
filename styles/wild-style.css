@@ -1,0 +1,153 @@
+/* vars */
+/* type */
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: black;
+  cursor: pointer; }
+
+h1, span, a {
+  color: white; }
+
+/* content */
+body {
+  background: black;
+  animation: fadeIn 2s normal forwards; }
+
+#wild-landscapes-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+::selection {
+  background: white; }
+
+.container {
+  position: absolute;
+  bottom: 4vw;
+  left: 4vw; }
+  .container .brand {
+    text-transform: uppercase; }
+    .container .brand h1 {
+      font-family: Univers-Black-Extended;
+      font-size: 8vw;
+      line-height: 6.4vw;
+      letter-spacing: -0.8vw;
+      margin: 0; }
+      .container .brand h1 .landscapes {
+        margin-left: 0.8vw; }
+      .container .brand h1 .kerning-1 {
+        letter-spacing: -0.85vw; }
+      .container .brand h1 .ild {
+        position: relative;
+        left: 0.25vw; }
+  .container .brand-image {
+    display: none; }
+  .container .subhead {
+    display: flex;
+    width: 71.8vw;
+    position: relative;
+    bottom: 0.5vw; }
+    .container .subhead span {
+      font-family: Univers-Bold-Extended;
+      text-transform: uppercase;
+      font-size: 1.2vw;
+      margin-left: 1.4vw;
+      margin-top: 0; }
+    .container .subhead .left, .container .subhead .middle, .container .subhead .right {
+      margin: 0; }
+    .container .subhead .left {
+      text-align: left;
+      width: 38%;
+      margin-left: 1.35vw; }
+    .container .subhead .middle {
+      text-align: center;
+      width: 32%;
+      position: relative;
+      top: 0.6vw;
+      right: 0.1vw;
+      border-top: 0.1vw solid white; }
+    .container .subhead .right {
+      text-align: right;
+      width: 38%; }
+
+/* tablet */
+@media (max-width: 1080px) {
+  .container {
+    margin-right: 6vw; }
+    .container .brand h1 {
+      font-size: 10.1vw;
+      line-height: 8.1vw;
+      letter-spacing: -1vw; }
+      .container .brand h1 .landscapes {
+        margin-left: 1vw; }
+      .container .brand h1 .kerning-1 {
+        letter-spacing: -1.2vw; }
+    .container .subhead {
+      width: auto; }
+      .container .subhead span {
+        font-size: 1.3vw; }
+      .container .subhead .left {
+        width: 40%;
+        margin-left: 1.7vw; }
+      .container .subhead .middle {
+        width: 50%; }
+      .container .subhead .right {
+        width: 40%; } }
+/* phone */
+@media (max-width: 480px) {
+  .container {
+    top: 0;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: auto; }
+    .container .brand {
+      display: none; }
+    .container .brand-image {
+      display: block;
+      width: 30px;
+      margin: 0 auto; }
+    .container .subhead {
+      position: relative;
+      margin: 28px auto;
+      text-align: center;
+      display: block;
+      width: auto; }
+      .container .subhead span {
+        font-size: 4.2vw;
+        line-height: 5vw;
+        margin-left: 0;
+        text-align: center; }
+      .container .subhead .left {
+        margin-left: 0; }
+      .container .subhead .left, .container .subhead .middle, .container .subhead .right {
+        width: 100%;
+        text-align: center; }
+      .container .subhead .right a {
+        letter-spacing: -0.03vw; }
+      .container .subhead .middle {
+        display: none; }
+
+  .landscapes {
+    margin-left: 0; }
+
+  .subhead {
+    width: auto; } }
+/* keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* fonts */
+@font-face {
+  font-family: "Univers-Bold-Extended";
+  src: url(../fonts/univers-bold-ext.woff) format("woff"), url(../fonts/univers-bold-ext.ttf) format("ttf"); }
+@font-face {
+  font-family: "Univers-Black-Extended";
+  src: url(../fonts/univers-black-ext.woff) format("woff"), url(../fonts/univers-black-ext.ttf) format("ttf"); }
+
+/*# sourceMappingURL=wild-style.css.map */
